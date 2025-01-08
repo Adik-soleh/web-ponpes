@@ -1,8 +1,9 @@
-import { Box, Flex, HStack, Link, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { BiPhone } from "react-icons/bi";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -31,22 +32,24 @@ export const Footer = () => {
             </HStack>
             <HStack>
               <MdEmail />
-              <Text>alArbain@gmail.com</Text>
+              <Text>arbain@gmail.com</Text>
             </HStack>
           </VStack>
 
-          <VStack align="start" >
+          <VStack align="start">
             <Text fontSize="lg" fontWeight="bold">
               Ikuti Kami
             </Text>
             <HStack>
-              <Link href="#">
+              <Link
+                to="https://www.instagram.com/pp.alarbain_official?igsh=MW5neXg0ZHQ5a2FzaQ=="
+              >
                 <FaInstagram color="white" />
               </Link>
-              <Link href="#">
+              <Link to="#">
                 <FaFacebook color="white" />
               </Link>
-              <Link href="#">
+              <Link to="#">
                 <BsYoutube color="white" />
               </Link>
             </HStack>
@@ -54,8 +57,8 @@ export const Footer = () => {
         </Flex>
 
         <Text textAlign="center" mt={10} fontSize="sm">
-          &copy; {new Date().getFullYear()} Pondok Pesantren Modern Nurussalam.
-          All rights reserved.
+          &copy; {new Date().getFullYear()} Pondok Pesantren Al-Arba'in. All
+          rights reserved.
         </Text>
       </Box>
     </>

@@ -1,4 +1,4 @@
-export function Profile() {
+export function ProfileItem() {
     return(
         <h1>Profile</h1>
     )

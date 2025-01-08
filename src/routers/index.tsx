@@ -1,6 +1,6 @@
-import Home from "@/components/items/home";
-import { Profile } from "@/components/items/profile";
 import Layouts from "@/layouts/layouts";
+import HomePage from "@/pages/home";
+import ProfilePage from "@/pages/profile";
 import {createBrowserRouter} from "react-router-dom";
 
 const Router = createBrowserRouter([
@@ -10,11 +10,11 @@ const Router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />,
+                element: <HomePage />,
             },
             {
                 path: "/profile",
-                element: <Profile />,
+                element: <ProfilePage />,
             },
         ],
     },
