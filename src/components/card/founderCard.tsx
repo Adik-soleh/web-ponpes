@@ -1,5 +1,5 @@
 import { Card, Flex, Image, Text } from "@chakra-ui/react";
-
+import ustad from "@/assets/images/ustad.jpg"
 export const FounderCard = () => {
   return (
     <Card.Root maxW="100vh" overflow="hidden"  alignItems={"center"}>
@@ -7,7 +7,7 @@ export const FounderCard = () => {
       <Image
       objectFit="cover"
        maxW="50vh"
-        src="https://plachold.it/200x200"
+        src={ustad}
         alt="Green double couch with wooden legs"
       />
       </Flex>
