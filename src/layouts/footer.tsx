@@ -49,7 +49,7 @@ export const Footer = () => {
               <Link to="#">
                 <FaFacebook color="white" />
               </Link>
-              <Link to="#">
+              <Link to="https://www.youtube.com/@ppal-arbain9085">
                 <BsYoutube color="white" />
               </Link>
             </HStack>
